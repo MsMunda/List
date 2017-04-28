@@ -21,8 +21,11 @@ def add_new_shopping_list(lists_by_name, new_list_name):
       None
     """
 
-    # your code here! 
-    pass
+    lists_by_name[new_list_name] = []
+    
+
+
+
 
 
 def remove_shopping_list(lists_by_name, list_name_to_remove):
@@ -211,6 +214,9 @@ def execute_repl(shopping_lists_by_name):
 
             # get name of list and add it
             list_name = raw_input('Enter the name for your list: ')
+
+            # shopping_lists_by_name is the dictionary
+            # list_name is the name of the shopping list (for example, target)
             add_new_shopping_list(shopping_lists_by_name, list_name)
 
             # get items for list and add them
